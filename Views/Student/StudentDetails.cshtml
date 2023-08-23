@@ -1,0 +1,23 @@
+﻿@model IList<Project_One.Models.Student>
+
+
+@foreach(var item in Model)
+{
+
+	<span class="text-success bg-info">No: @item.Id</span>
+	<br />
+	<span class="text-primary">Name: @item.Name</span>
+	<br />
+	<span class="text-info">Description: @item.Description</span>
+	<br />
+	<span class="text-warning">Status: @item.Exist</span>
+	<br />
+	<hr />
+
+}
+
+
+
+
+@*ID: @ViewBag.StudentsDetails.Id
+Name: @ViewBag.StudentsDetails.Name*@

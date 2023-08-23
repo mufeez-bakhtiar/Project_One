@@ -1,0 +1,18 @@
+﻿@{
+	var value = ViewBag.Detail;
+}
+<h1 class="text-center">This is a view from student controller</h1>
+
+
+@if(value==1){
+	
+	<h2 class="text-success text-center">The value is one. We are using ViewBag to grasp the data here</h2>
+}
+else if (value == 2){
+	<h2 class="text-primary text-center">The value is two. We are using ViewBag to grasp the data here </h2>
+}
+else {
+	<h2>error</h2>
+}
+
+<h3 class="text-info text-center"> @TempData["Details"]</h3>

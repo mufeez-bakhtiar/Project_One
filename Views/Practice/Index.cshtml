@@ -1,0 +1,12 @@
+﻿@model IList<Project_One.Models.Practice>
+
+	@foreach(Practice Abc in Model){
+
+		<span>ID: @Abc.Id</span>
+		<br />
+		<span>Name: @Abc.Name</span>
+		<br />
+		<span>Description: @Abc.Description</span>
+		<hr />
+
+	}
